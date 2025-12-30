@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/test', (req, res) => {
-  res.json({ message: "Hello from the backend! (No DB connected)" });
+  res.json({ message: "Hello from the backend! (No DB connected)", id: "1" });
 });
 
 // 4. Start Server
