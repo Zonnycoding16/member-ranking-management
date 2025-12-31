@@ -1,13 +1,13 @@
-import Navigation_Bar from "../components/navigationNavbar";
+import NavBar from "../components/NavBar";
 import AboutUsLanding from "../components/AboutUsLanding";
-import Intro_Section from "../components/Intro-section";
+import IntroSectionLanding from "../components/IntroSectionLanding";
 
 
 const LandingPage = () => {
     return (
       <>
-        <Navigation_Bar />
-        <Intro_Section /> 
+        <NavBar />
+        <IntroSectionLanding /> 
         <AboutUsLanding />
       </>
     )

@@ -1,6 +1,6 @@
-import React from "react";
 import headerb from "../../assets/headerb.webp"
-function Intro_Section() {
+
+function IntroSectionLanding() {
   return (
     <div className="w-full py-6 px-22 flex flex-col align-middle ">
       <div className="rounded-xl overflow-hidden">
@@ -25,4 +25,4 @@ function Intro_Section() {
   );
 }
 
-export default Intro_Section;
+export default IntroSectionLanding;
