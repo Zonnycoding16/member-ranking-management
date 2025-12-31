@@ -1,4 +1,4 @@
-import headerb from "../../assets/headerb.webp"
+import headerb from "../assets/headerb.webp"
 
 function IntroSectionLanding() {
   return (

@@ -1,5 +1,5 @@
-import logo from "../../assets/logo.svg"
-import assist from "../../assets/assist.png"
+import logo from "../assets/logo.svg"
+import assist from "../assets/assist.png"
 
 function NavBar() {
   return (
