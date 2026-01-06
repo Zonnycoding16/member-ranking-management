@@ -1,15 +1,13 @@
-import React from 'react';
-
 const EventCard = ({ title, description, dateLabel, img, reverse, linkText = 'View more details', linkUrl, imgClass, imgStyle }) => {
   return (
-    <div className={`w-[calc(100%-80px*2)] max-w-[1500px] mx-auto my-8`}>
+    <div className={`w-[calc(100%-80px*2)] max-w-375 mx-auto my-8`}>
       <div className={`flex flex-col md:flex-row items-center bg-white rounded-xl shadow-md overflow-hidden p-4 md:p-6 gap-6 ${reverse ? 'md:flex-row-reverse' : ''}`}>
           <div className={`w-full md:w-1/2 ${reverse ? '-mx-4 md:-mr-6 md:rounded-r-xl' : '-mx-4 md:-ml-6 md:rounded-l-xl'}`}>
             <div className={`overflow-hidden ${reverse ? 'rounded-r-xl' : 'rounded-l-xl'}`}>
             <img
               src={img}
               alt={title}
-              className={imgClass ? imgClass : 'w-full h-[300px] object-cover md:h-[360px]'}
+              className={imgClass ? imgClass : 'w-full h-75 object-cover md:h-90'}
               style={imgStyle}
             />
           </div>
@@ -25,7 +23,7 @@ const EventCard = ({ title, description, dateLabel, img, reverse, linkText = 'Vi
                 href={linkUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 border border-gray-800 text-sm md:text-base flex items-center gap-2 rounded-md hover:shadow-sm inline-flex"
+                className="px-4 py-2 border border-gray-800 text-sm md:text-base inline-flex items-center gap-2 rounded-md hover:shadow-sm"
               >
                 <span>{linkText}</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

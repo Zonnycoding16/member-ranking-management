@@ -27,6 +27,17 @@ const events = [
   },
   {
     id: 3,
+    title: "SỰ KIỆN TỔNG KẾT HỌC KỲ SUMMER 2025 - GDG ON CAMPUS FPTU HCM",
+    description: "Một kỳ học Summer đầy năng lượng đã dần khép lại, và giờ là lúc chúng ta cùng nhìn lại những hành trình tuyệt vời đã cùng nhau đi qua!",
+    dateLabel: 'Nov 1, 7:00 AM - 6:00 PM (GMT+7)',
+    img: 'https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/561314932_122129832974072974_9073186526397073020_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHb3FRYu3124SePzpiWIOi-0pk6PWqyG23SmTo9arIbbTltyWhvG-iWIn_CV9jnl4FctVY0KbbISQtMP8THadSS&_nc_ohc=B3sW83HAm8IQ7kNvwEQjwp6&_nc_oc=AdlBSPkBvpqn71rCZUJ1Gbgoe1fjsSahxlEeFHnYMPirbJgBCCHeFTMVbq7QSlOm1-fX0D4qka3nSISCmKIZvlkg&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=I72qRvu1RgOmDmYiIfVUBQ&oh=00_Afp0vzSHhP6TMb1LSQITZZoAdU5BVcxWUNrQRjow-1iV9Q&oe=6961C82A',
+    linkUrl: 'https://www.facebook.com/share/p/1BsMhQUA6L/',
+    linkText: 'Open on Facebook',
+    imgClass: 'w-full h-[420px] md:h-[560px] object-cover',
+    imgStyle: { objectPosition: 'center' },
+  },
+  {
+    id: 4,
     title: '𝗖𝗢𝗠𝗜𝗡𝗚 𝗦𝗢𝗢𝗡',
     description: 'New Chapter',
     imgClass: 'w-full object-contain',
@@ -35,18 +46,7 @@ const events = [
     linkUrl: 'https://www.facebook.com/share/16nN3LXwnK/',
     linkText: 'Open on Facebook',
   },
-  {
-    id: 4,
-    title: "SỰ KIỆN TỔNG KẾT HỌC KỲ SUMMER 2025 - GDG ON CAMPUS FPTU HCM",
-    description:
-      "Một kỳ học Summer đầy năng lượng đã dần khép lại, và giờ là lúc chúng ta cùng nhìn lại những hành trình tuyệt vời đã cùng nhau đi qua!",
-    dateLabel: 'Nov 1, 7:00 AM - 6:00 PM (GMT+7)',
-    img: 'https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/561314932_122129832974072974_9073186526397073020_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHb3FRYu3124SePzpiWIOi-0pk6PWqyG23SmTo9arIbbTltyWhvG-iWIn_CV9jnl4FctVY0KbbISQtMP8THadSS&_nc_ohc=B3sW83HAm8IQ7kNvwEQjwp6&_nc_oc=AdlBSPkBvpqn71rCZUJ1Gbgoe1fjsSahxlEeFHnYMPirbJgBCCHeFTMVbq7QSlOm1-fX0D4qka3nSISCmKIZvlkg&_nc_zt=23&_nc_ht=scontent.fsgn8-3.fna&_nc_gid=I72qRvu1RgOmDmYiIfVUBQ&oh=00_Afp0vzSHhP6TMb1LSQITZZoAdU5BVcxWUNrQRjow-1iV9Q&oe=6961C82A',
-    linkUrl: 'https://www.facebook.com/share/p/1BsMhQUA6L/',
-    linkText: 'Open on Facebook',
-    imgClass: 'w-full h-[420px] md:h-[560px] object-cover',
-    imgStyle: { objectPosition: 'center' },
-  },
+  
 ];
 
 const EventLanding = () => {
