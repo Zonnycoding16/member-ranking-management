@@ -51,7 +51,7 @@ const events = [
 
 const EventLanding = () => {
   return (
-    <section className="py-10 bg-white">
+    <section className="py-10 bg-white" id="section-events">
       <h2 className="text-center text-4xl md:text-5xl font-extrabold mb-8 text-blue-600">Our Events</h2>
 
       <div className="space-y-8">
