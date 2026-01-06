@@ -1,5 +1,3 @@
-import logo from "../assets/logo.svg"
-import assist from "../assets/assist.png"
 import logo from "../assets/logo.svg";
 import assist from "../assets/assist.png";
 import { useEffect, useState } from "react";
@@ -27,7 +25,6 @@ function NavBar() {
     };
   }, []);
   return (
-    <div className="sticky top-0 flex gap-5 h-25 bg-[#fafafa] px-20">
     <div
       className={`sticky top-0 z-20 flex gap-5 h-24 bg-[#fafafa] px-20 ${
         opacity === 1 ? "shadow-md" : "shadow-none"
@@ -35,8 +32,6 @@ function NavBar() {
     >
       <img src={logo} alt="gg-logo" />
       <div className="flex flex-1 justify-between items-center">
-        <div>
-          <h1 className="text-[#1a2a56] font-bold text-[32px]">Google Developer Group</h1>
         <div
           className={`transition-opacity duration-200 ${
             opacity === 1 ? "opacity-100" : "opacity-0"
@@ -51,11 +46,6 @@ function NavBar() {
             <span>FPT University HCMC</span>
           </div>
         </div>
-        <div className="flex items-center gap-6">
-          <div>Member</div>
-          <div>Event</div>
-          <div>Gallery</div>
-          <div>FAQ</div>
         <div className="flex items-center gap-16 h-max">
           {menuNav?.map((item) => (
             <div
@@ -75,11 +65,6 @@ function NavBar() {
             </div>
           ))}
           <div>
-            <img
-              className="h-5"
-              src={assist}
-              alt="assist-logo"
-            />
             <img className="h-5" src={assist} alt="assist-logo" />
           </div>
         </div>
