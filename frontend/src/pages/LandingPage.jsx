@@ -9,19 +9,19 @@ import FAQSections from "../components/FAQSections";
 import MemberIntro from "../components/MemberIntro";
 
 const LandingPage = () => {
-    return (
-        <>
-            <NavBar />
-            <IntroSectionLanding />
-            <AboutUsLanding />
-            <MemberIntro />
-            <EventLanding />
-            <GallerySection />
-            <FAQSections />
-            <Footer />
-            <ArrowButton />
-        </>
-    );
+  return (
+    <>
+      <NavBar />
+      <IntroSectionLanding />
+      <AboutUsLanding />
+      <MemberIntro />
+      <EventLanding />
+      <GallerySection />
+      <FAQSections />
+      <Footer />
+      <ArrowButton />
+    </>
+  );
 };
 
 export default LandingPage;
