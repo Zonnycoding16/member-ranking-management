@@ -1,7 +1,6 @@
 import React from "react";
 
 import Icon from "./Icon";
-import "./MemberIntro.css";
 
 const paths = [
   {
@@ -37,19 +36,19 @@ const teamData = [
 
 const MemberIntro = () => {
   return (
-    <div className="team-members-section">
-      <h1 className="section-title">Meet Our Team</h1>
-      <div className="members-grid">
+    <div className="py-20 px-5 text-center bg-white">
+      <h1 className="text-4xl text-[#109d58] mb-12">Meet Our Team</h1>
+      <div className="flex flex-wrap justify-center gap-10">
         {teamData.map((member, i) => (
-          <div className="member-frame" key={member.id}>
+          <div className="w-62.5 transition-transform duration-300 ease-in-out hover:-translate-y-2.5" key={member.id}>
             <SVGClipImage
               url={`/members/${member.id}.png`} // Đảm bảo bạn có ảnh .png trong public/members/
               path={paths[i % paths.length]}
               id={member.id}
             />
-            <div className="member-info">
-              <h3 className="member-name">{member.name}</h3>
-              <p className="member-pos">{member.position}</p>
+            <div className="mt-4">
+              <h3 className="text-xl font-bold my-1">{member.name}</h3>
+              <p className="text-[#5f6368] text-sm">{member.position}</p>
             </div>
           </div>
         ))}
@@ -61,7 +60,7 @@ const MemberIntro = () => {
 // Helper Component để xử lý cắt ảnh
 const SVGClipImage = ({ url, path: pathData, id }) => {
   return (
-    <svg viewBox="0 0 200 200" className="blob-svg">
+    <svg viewBox="0 0 200 200" className="w-50 h-50">
       <defs>
         <clipPath id={`clip-${id}`}>
           <path d={pathData.d} transform="translate(100 100)" />
