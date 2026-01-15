@@ -45,9 +45,8 @@ const gemLogSchema = new mongoose.Schema(
     },
     // Phần dành cho AI
     aiMeta: {
-      tool: { type: String, default: "Gemini 1.5 Flash" },
+      tool: { type: String, default: "gemini-3.0-flash" },
       inputType: { type: String, enum: ["voice", "text", "image"] },
-      confidenceScore: { type: Number }, // Độ tin cậy của AI (0-1)
       rawAiResponse: { type: mongoose.Schema.Types.Mixed }, // Lưu phản hồi thô từ AI để kiểm chứng
     },
   },
