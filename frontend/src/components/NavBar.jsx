@@ -1,6 +1,7 @@
 import logo from "../assets/logo.svg";
 import assist from "../assets/assist.png";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const menuNav = [
   { name: "Members", id: "section-members", color: "text-[#109d58]" },
@@ -9,6 +10,7 @@ const menuNav = [
   { name: "FAQ", id: "section-faq", color: "text-[#e94436]" },
 ];
 function NavBar({ onChatToggle }) {
+  const navigate = useNavigate();
   const [opacity, setOpacity] = useState(0);
 
   useEffect(() => {
@@ -69,6 +71,12 @@ function NavBar({ onChatToggle }) {
             onClick={onChatToggle}
           >
             <img className="h-10  " src={assist} alt="assist-logo" />
+          </div>
+          <div 
+            className="flex items-center text-[18px] px-6 py-4 font-bold cursor-pointer text-[#4385f3] hover:bg-[#0001] h-full transition-colors duration-200"
+            onClick={() => navigate('/login')}
+          >
+            Login
           </div>
         </div>
       </div>

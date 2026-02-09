@@ -22,5 +22,9 @@
   "homepage": "https://github.com/gdgc-fptu-hcmc/member-ranking-management#readme",
   "devDependencies": {
     "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "lucide-react": "^0.563.0",
+    "recharts": "^3.7.0"
   }
 }
