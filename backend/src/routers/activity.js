@@ -1,6 +1,7 @@
 import { Router } from "express";
 import activityController from "../controllers/activityController.js";
 import middlewareController from "../controllers/middlewareController.js";
+import checkInsController from "../controllers/checkInsController.js";
 
 const router = Router();
 
@@ -13,6 +14,15 @@ router.get("/", activityController.getAllActivities);
 
 // GET /v1/activities/:id - Get activity by ID
 router.get("/:id", activityController.getActivityById);
+
+// POST /v1/activities/:id/checkins
+router.post(
+  "/:activityId/checkins",
+  middlewareController.verifyToken,
+  checkInsController.submitCheckIn,
+);
+//GET /v1/activities/member
+router.get("/checkins/me", middlewareController.verifyToken,checkInsController.getMyActivities )
 
 // =========================================================
 // ADMIN ENDPOINTS (Require admin or bdh role)
@@ -44,6 +54,17 @@ router.get(
     "/:id/participants",
     middlewareController.verifyTokenAndAdminAuth,
     activityController.getActivityParticipants
+);
+
+// =========================================================
+// MEMBER ENDPOINTS (Require authentication)
+// =========================================================
+
+// POST /v1/activities/:id/join - Join an activity
+router.post(
+    "/:id/join",
+    middlewareController.verifyToken,
+    activityController.joinActivity
 );
 
 export default router;
